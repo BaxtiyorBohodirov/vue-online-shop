@@ -1,15 +1,19 @@
 <template>
     <div class="main-wrapper">
         <h1>{{title}}</h1>
+        <v-cart/>
+        <v-catalog/>
     </div>
+
 </template>
 
 <script>
+ import VCart  from "./v-cart.vue"
+import VCatalog from './v-catalog.vue'
+
 export default {
     name:'v-main-wrapper',
-    components:{
-
-    },
+    components:{VCart, VCatalog},
     props:{},
     data(){
         return {
@@ -17,15 +21,6 @@ export default {
         }
 
     },
-    computed:{
-        
-    },
-    methods:{
-
-    },
-    mounted(){
-        console.log("Hello i am alive!");
-    }
 }
 </script>
 
